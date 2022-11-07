@@ -96,7 +96,7 @@ export default function Moedas() {
                         value={valueDollar}
                         onChange={(e) => setValueDollar(e.target.value)} 
                       />
-                      <a href='https://bit.ly/3fsHWPq' target="blank">
+                      <a href='https://bit.ly/3fsHWPq' target="_blank">
                         <button 
                           className="buttonMoeda" 
                           type="submit" 
@@ -152,7 +152,7 @@ export default function Moedas() {
                         size="2"value={valueEuro}
                         onChange={(e) => setValueEuro(e.target.value)} 
                       />
-                      <a href='https://bit.ly/3Sw6dTB' target="blank">
+                      <a href='https://bit.ly/3Sw6dTB' target="_blank">
                         <button 
                           className="buttonMoeda" 
                           type="submit" 
