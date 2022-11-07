@@ -1,0 +1,527 @@
+.containerIMC {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 15px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  flex-wrap: wrap; 
+  background-image: url("https://guiadafarmacia.com.br/wp-content/uploads/2021/02/corpo-imc.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+.pageTitleIMC {
+  color: #ddd;
+  margin: 0 0 10px;
+  font-size: 6em;
+  -webkit-linear-gradient: top, #ecfca7, #f1ff2b, #ffc62b;
+  background: linear-gradient(to top, #ecfca7, #f1ff2b, #ffc62b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  text-align: center;
+}
+
+.goupContainer{
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    /* background-color: #0b4b64;    */
+}
+    
+.imgTitlle {
+  width: 50%;
+  height: 280px;
+  border: solid 2px #ffc62b;
+  border-radius: 15px;
+} 
+
+.imgTitlleMobile {
+  width: 50%;
+  height: 280px;
+  border: solid 2px #ffc62b;
+  border-radius: 15px;
+  display: none;
+} 
+
+.boxItens{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 290px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    position: relative;
+    /* background-color: #ecfca7;  */
+  }
+
+.boxInfo {
+  width: 45%;
+  min-width: 500px;
+  height: auto;
+  background-color: #ebe8e8;
+  color: #ff672b;
+  border: solid 2px #ffc62b;
+  box-shadow: 0px 0px 30px #0b4b6488;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap; 
+}
+
+.boxInfo h2 {
+  margin-bottom: 15px;
+}
+
+.boxInfo label {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.nome {
+  width: 90%;
+  height: auto;
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+  border: solid 3px #20212c;
+  border-radius: 15px;
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nome input {
+  width: 60%;
+  height: 30px;
+  font-family: "Roboto Mono", monospace;
+  font-size:  1em;
+  text-align: center;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #7378b3be;
+  color: #20212c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}  
+
+.valor {
+  width: 90%;
+  height: auto;
+  font-family: "Roboto Mono", monospace;
+  font-size:  1em;
+  border: solid 3px #20212c;
+  border-radius: 15px;
+  padding: 3px 10px;    
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.valor input {
+  width: 30%;
+  height: 30px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: none;
+  background-color: #7378b3be;
+  color: #20212c;
+  cursor: pointer;
+}
+
+.boxBtnImc {
+  width: 400px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btnImc {
+  width: 130px;
+  height: 40px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #0549af;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.btnImc:hover {
+  background-color:  #0461ec;
+  transform: scale(1.05);
+}
+.btnImc:active {
+  transform: scale(0.95);
+}
+
+.btnZerarImc {
+  width: 130px;
+  height: 40px;
+  margin-left: 30px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #921b1b;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+ 
+.btnZerarImc:hover {
+  background-color: #c20303;
+  transform: scale(1.05);
+}
+.btnZerarImc:active {
+   transform: scale(0.95);
+}
+
+.resultadoImc {
+  width: 45%;
+  min-width: 500px;
+  height: auto;
+  background-color: #ebe8e8;
+  color: #ff672b;
+  border: solid 2px #ffc62b;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2em;
+  padding: 15px 5px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 30px #0b4b6488;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+.resultadoImc h2 {
+  margin-bottom: 15px;
+}
+
+.idadeImc {
+  width: 50%;
+  height: 50px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.5em;
+  border: solid 3px #20212c;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classificacaoImc {
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+  font-size: 1.2em;
+  left: 0; 
+}
+
+.aprovacao {
+  width: 90%;
+  min-width: 550px;
+  height: 30px;
+  padding: 30px 5px;
+  font-size: 1.2em;
+  border: solid 3px #20212c;
+  color: #20212c;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  border-radius: 10px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#classification {
+  width: 95%;
+  height: 70px;
+}
+
+
+
+@media only screen and (max-width: 1700px) {
+
+  .pageTitle{
+      font-size: 3.5em;
+  }
+
+  .classificacaoImc {
+    font-size: 1em;
+  }
+
+  .resultadoImc {
+    font-size: 1em;
+  }
+
+  .boxInfo label h2 {
+    font-size: 1.3em;
+  }
+   
+}
+
+@media only screen and (max-width: 1600px) {
+  .aprovacao {
+   min-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+   .aprovacao {
+    min-width: 400px;
+   }
+
+   .imgTitlle {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  
+  .pageTitle{
+    font-size: 3.0em;
+  }
+
+  .imgTitlle {
+    width: 80%;
+  }
+
+  .resultadoImc {
+    width: 52%;
+  }
+
+  .nome {
+    font-size: .9em;
+  }
+
+  .nome input {
+    font-size: .9em;
+    width: 95%;
+  }
+
+  .valor {
+    font-size: .9em;
+  }
+
+  .valor input {
+    font-size: .9em;
+  }
+
+  .btnCalc {
+    font-size: .9em;
+  }
+
+  .btnZerar {
+    font-size: .9em;
+  }
+
+  .classificacaoImc {
+    font-size: .9em;
+  }
+
+  .resultadoImc {
+    font-size: .8em;
+  }
+
+  .boxInfo label h2 {
+    font-size: 1.1em;
+  }
+    
+  .aprovacao {
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+
+  .pageTitle{
+      font-size: 2.5em;
+  }
+
+  .imgTitlle {
+    width: 100%;
+  }
+
+  .resultadoImc {
+    width: 80%;
+    font-size: .8em;
+  }    
+}
+
+@media only screen and (max-width: 680px) {
+  .goupContainer {
+    width: 100%;
+  }
+  
+  .imgTitlle {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+
+  .pageTitle{
+    font-size: 1.2em;
+  }
+
+  .nome input {
+   margin-top: 10px;
+  }
+
+  .imgTitlle {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+
+  .pageTitleIMC {
+    font-size: 3em;
+  }
+
+  .imgTitlle {
+    display: none;
+  } 
+  
+  .imgTitlleMobile {
+    display: flex;
+    width: 70%;
+    min-width: 280px;
+  }
+
+  .boxInfo {
+    min-width: 98%;
+    min-height: 350px;
+  }
+
+  .valor input {
+    width: 60%;
+  }
+
+  .boxBtnImc {
+    width: 100%;
+  }
+
+  .btnImc {
+    width:100px;
+    height: 40px;
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .btnZerarImc {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .resultadoImc {
+    min-width: 98%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+
+  .pageTitleIMC {
+    font-size: 2.5em;
+  }
+
+  .imgTitlleMobile {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .boxInfo {
+    min-width: 98%;
+    min-height: 350px;
+  }
+
+  .valor input {
+    width: 80%;
+  }
+
+  .btnImc {
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .btnZerarImc {
+    width: 90px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .resultadoImc {
+    min-width: 98%;
+    height: auto;
+  }
+}

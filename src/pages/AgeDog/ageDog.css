@@ -1,0 +1,363 @@
+  .containerDog {
+    width: 100%;
+    min-width: 100%; 
+    height: auto;   
+    min-height: 110vh;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url("https://i.pinimg.com/736x/d1/d7/88/d1d7889a87466b5e87ccf88272bf8f90.jpg");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    overflow: hidden;
+  }
+  
+  .pageTitleDog {
+    color: #ddd;
+    font-size: 4.5em;
+    -webkit-linear-gradient: left, #ffa7a7, #ff2b2b, #ff2b2b, #ffa7a7;
+    background: linear-gradient(to right, #ffa7a7, #ff2b2b, #ff2b2b, #ffa7a7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    text-align: center;
+  }
+  
+  .pageSubtitleDog {
+    color: #ffa7a7;
+    margin: 10px 0;
+    font-size: 2em;
+    line-height: 60px;
+  }
+  
+  .imgTitlleDog {
+    width: 500px;
+    border: solid 3px #ff2b2b;
+    border-radius: 15px;
+  } 
+ 
+  .boxAge {
+    width: 800px;
+    height: auto;
+    background-color: #f8e6e6;
+    color: #ff2b2b;
+    border: solid 3px #ff2b2b;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  .nome {
+    width: 90%;
+    height: auto;
+    font-size: 1em;
+    border: solid 3px #20212c;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .inputNameDog {
+    width: 50%;
+    height: auto;
+    font-size:  1em;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: none;
+    background-color: #ff2b2b88;
+    color: #20212c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }  
+  
+  .age {
+    width: 60%;
+    height: auto;
+    font-size:  .9em;
+    border: solid 3px #20212c;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+  }
+  
+  .inputAgeDog {
+    width: 50%;
+    height: 30px;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding-left: 10px;
+    border: none;
+    background-color: #ff2b2b88;
+    color: #20212c;
+    cursor: pointer;
+  }
+  
+  .boxBtnAge {
+    width: 50%;
+    height: auto;
+    min-height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .btnCalcularAge {
+    width: 180px;
+    height: auto;
+    font-size:  1em;
+    border-radius: 10px;
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+    background-color: #0549af;
+    color: #ddd;
+    cursor: pointer;
+    transition: all ease .5s;
+  }
+  
+  .btnCalcularAge:hover {
+    background-color:  #0461ec;
+    transform: scale(1.05);
+  }
+  .btnCalcularAge:active {
+     transform: scale(0.95);
+  }
+
+  .btnZerarAge {
+    width: 180px;
+    height: auto;
+    font-size:  1em;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #ff2b2b;
+    color: #ddd;
+    cursor: pointer;
+    transition: all ease .5s;
+  }
+  
+  .btnZerarAge:hover {
+    background-color: #f80000;
+    transform: scale(1.05);
+  }
+  .btnZerarAge:active {
+     transform: scale(0.95);
+  }
+  
+  
+  .resultadoPet {
+    width: 720px;
+    height: auto;
+    background-color: #f8e6e6;;
+    color: #ff2b2b;
+    border: solid 3px #ff2b2b;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  .idade {
+    width: 50%;
+    height: 60px;
+    font-size: 2.5em;
+    border: solid 3px #20212c;
+    border-radius: 15px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .classificacaoPet {
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    font-size: 1.2em;
+    margin-top: 15px;   
+    left: 0; 
+  }
+
+  .aprovacaoAgePet {
+    width: 95%;
+    height: 60px;
+    font-size: 1em;
+    color: #ddd;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #0461ec; */
+  }
+  
+  .aprovacaoPet {
+    width: 95%;
+    height: 60px;
+    font-size: 1em;
+    border: solid 3px #20212c;
+    color: #20212c;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  @media only screen and (max-width: 850px) {
+
+    .pageTitleDog {
+      font-size: 3em;
+    }
+    
+    .pageSubtitleDog {
+      font-size: 1.5em;
+    }
+
+    .boxAge {
+      width: 90%;
+      padding: 30px 10px;
+      font-size: 1em;
+    }
+
+    .nome {
+      width: 90%;
+      height: auto;
+      font-size: 1em;
+    }
+    
+    .resultadoPet {
+      width: 90%;
+      padding: 30px 10px;
+      font-size: 1em;
+    } 
+    
+    .btnCalcularAge {
+      font-size:  .8em;
+    }
+    
+    .btnZerarAge {
+      font-size:  .8em;
+    }
+
+    .idade {
+      height: 60px;
+      font-size: 2em;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+
+    .pageTitleDog {
+      font-size: 2.5em;
+    }
+
+    .imgTitlleDog {
+      width: 95%;
+    } 
+
+    .boxAge {
+      width: 100%;
+    }
+
+    .age {
+      width: 80%;
+    }
+
+    .resultadoPet {
+      width: 100%;
+    } 
+
+    .inputNameDog {
+      width: 95%;
+      margin-top: 10px;
+    } 
+
+    .inputAgeDog {
+      width: 80%;
+      margin-top: 10px;
+    } 
+  }
+
+
+
+  @media only screen and (max-width: 520px) {
+
+    .pageTitleDog {
+      font-size: 2em;
+    }
+
+    .btnCalcularAge {
+      width: 200px;
+    }
+    
+    .btnZerarAge {
+      width: 200px;
+    }
+    
+    .boxAge {
+      font-size: .9em;
+    }
+    
+    .resultadoPet {
+      font-size: .9em;
+    }
+
+    .idade {
+      height: 55px;
+      font-size: 1.8em;
+    }
+
+    .classificacaoPet {
+      margin-top: 0px;   
+    }
+  }
+
+  
+  @media only screen and (max-width: 350px) {
+
+    .idade {
+      width: 70%;
+    }
+
+    .aprovacaoPet {
+      width: 98%;
+      padding: 10px 0;
+    }
+  }

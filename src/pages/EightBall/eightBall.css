@@ -1,0 +1,204 @@
+
+.ContainerEightBall {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 25px;
+  width: 100%;
+  height: auto;
+  min-height: 90vh;
+  background-image: url('../../../public/img/bola8.png');
+  background-color: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-blend-mode: darken; 
+  background-size: cover;
+  background-position: top;
+}
+
+.pageTitleEight {
+  color: #ddd;
+  margin: 0 0 10px;
+  font-size: 4em;
+  -webkit-linear-gradient: left, #82ff6a, #035394,  #82ff6a;
+  background: linear-gradient(to top, #82ff6a, #035394,  #82ff6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  text-align: center;
+}
+
+.inputItem {
+  width:50%;
+  height: 60px;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 6px;
+}
+
+
+.textLight {
+  width: 90%;
+  height: auto;
+  color: #7fc1f7;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.textAsk {
+  width: 100%;
+  height: 100px;
+  color: #c1e3ff;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* background-color: #ff93c933; */
+}
+
+.textAsk span {
+  color: #82ff6a;
+  margin-bottom: 15px;
+}
+
+.divA {
+  width: 40%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   /* background-color: #c1e3ff71; */
+}
+
+.boxBtnAsk {
+  width: 50%;
+  height: auto;
+  min-height: 30px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* background-color: #fbff00; */
+}
+
+.btnAsk {
+  width: 130px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #0549af;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.btnAsk:hover {
+  background-color:  #0461ec;
+  transform: scale(1.05);
+}
+
+.btnAsk:active {
+  transform: scale(0.95);
+}
+
+.btnZerar {
+  width: 130px;
+  height: 40px;
+  margin-left: 40px;
+  margin-bottom: 14px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #921b1b;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.btnZerar:hover {
+  background-color: #c20303;
+  transform: scale(1.05);
+}
+
+.btnZerar:active {
+   transform: scale(0.95);
+}
+
+.boxAnswer {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.answer {
+  width: 50%;
+  height: 50px;
+  color: #7fc1f7;
+  font-size: 35px;
+}
+
+.answerTwo {
+  width: 50%;
+  height: 50px;
+  font-size: 35px;
+  color: #fbff00;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  .inputItem {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .pageTitleEight {
+   font-size: 2.5em;
+  }
+
+  .textLight {
+    font-size: 22px;
+  }
+  
+  .inputItem {
+    font-size: 18px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .textAsk {
+    font-size: 22px;
+  }
+
+  .textAsk span {
+    font-size: 22px;
+  }
+
+  .answer {
+    font-size: 25px;
+  }
+
+  .answerTwo {
+    font-size: 25px;
+  }
+}

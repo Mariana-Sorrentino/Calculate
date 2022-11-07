@@ -1,0 +1,234 @@
+/* MENU MOBILE */
+
+.menuNavbar {
+  position: fixed;
+  width: 430px; 
+  height: auto;
+  min-height: 80px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+
+
+.btnMenu {
+  position: absolute;
+  width: 160px; 
+  height: 40px;
+  padding: 10px;  
+  right: 16px;
+  top: 25px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: solid 1.5px #2d2e47;
+  box-shadow: 2px 5px 40px  #000000;
+  background: linear-gradient(45deg,#2d2e47, #006a72); 
+  color: #fff;  
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;  
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btnMenu:active{
+transform: scale(1.05);
+}
+
+.btnMenu:hover{    
+  animation: jump 1s;
+}
+
+@keyframes jump{
+  0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+
+  40%{
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15%);
+  }
+
+  80%{
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8%);
+  }
+}
+
+.groupMenu {
+  position: absolute;
+  width: 90%;
+  max-width: 430px;
+  height: auto;
+  padding: 100px 30px;
+  right: 0px;
+  top: 45px;
+  background-color: #0a0a29;
+  box-shadow: 2px 5px 40px  #000000;  
+  /* border-radius: 30px; */
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 20%;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 9;
+  transition: all ease-in-out .6s;  
+} 
+
+.navList {
+width: 100%;
+margin-bottom: 20px;   
+display: flex;
+justify-content:center;
+align-items: center;
+}
+
+.navListIcons {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+transition: all ease 0.6s; 
+}
+
+.ItensNavList{
+width: 100%; 
+list-style: none;
+text-decoration: none;
+line-height: 20px;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;   
+}
+
+.menu { 
+width: 100%; 
+letter-spacing: 1px; 
+line-height: 50px;     
+float: right;
+font-family: sans-serif;
+font-size: 20px;
+margin-right: 1.5em;
+color: #bceaff;
+text-decoration: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+flex-wrap: nowrap;  
+justify-content: space-around;
+flex-direction: row;
+transition: all ease 1s;
+}
+
+.menu a {
+  color: #bceaff;  
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: aqua;
+}
+
+.itenIcon {
+  color: #027e7e;
+  font-size: 20px;
+}
+
+.menuIcons { 
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right: 25px;
+text-decoration: none;
+background-color: #00244d;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+transition: 0.5s;
+}
+
+.menuIcons:hover{
+background-color: #4b9fff; 
+box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+transition:all ease 0.3s;
+}
+
+#redeSocial{
+font-size: 19px; 
+cursor: pointer;
+color: #4b9fff;
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center; 
+transition: all ease 0.6s; 
+}
+
+#redeSocial:hover{
+color:  #00244d;
+transform: scale(1.2);  
+}
+
+.menuIcons:hover > #redeSocial{
+color: #00244d;
+transform: scale(1.2);  
+}  
+
+@media only screen and (max-width: 1080px) {
+
+  .btnMenu {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  .btnMenu {
+    width: 130px; 
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .menu { 
+    font-size: 14px;
+    line-height: 45px;
+  }
+
+  .groupMenu {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+
+  .btnMenu {
+    width: 120px; 
+    font-size: 14px;
+  }
+
+  .menu { 
+    font-size: 12px;
+    line-height: 40px;
+  }
+
+  .groupMenu {
+    width: 85%;
+    max-width: 230px;
+  }
+}

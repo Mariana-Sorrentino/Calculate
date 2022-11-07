@@ -1,0 +1,82 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  padding-left: 20px;
+  background-color: #0a0a29;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+.imgLogo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  background-image: url('../../../public/img/iconCalc.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.item {
+  font-size: 20px;
+  margin-right: 1.5em;
+  color: #bceaff;
+  text-decoration: none;
+}
+
+.item a {
+  color: #bceaff;  
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: aqua;
+}
+
+.itenIcon {
+  color: #027e7e;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 1360px) {
+
+  .item {
+    font-size: 16px;
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .item {
+    font-size: 16px;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .btnMenu {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  .item {
+    font-size: 14px;
+  }
+}

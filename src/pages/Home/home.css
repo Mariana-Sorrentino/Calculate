@@ -1,0 +1,250 @@
+
+  .containerHome {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url("https://nova-escola-producao.s3.amazonaws.com/dGbkk65pUrXa9AZCFzNUBqbbEcBDZMUHEkrAMrFZW9XuEp2P8VqdqWqYECY9/gettyimages-884140874.jpg");
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    margin: 0px;
+    padding: 70px 20px;   
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .boxTitle {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background-color: transparent;     
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+  
+  .title {    
+    color: #ddd;
+    margin: 0 0 10px;
+    font-size: 3em;
+    -webkit-linear-gradient: bottom,  rebeccapurple, steelblue, turquoise;
+    background: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-family: sans-serif;
+    text-align: center;  
+}
+
+  .subTitle {    
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.3em;
+    color: #bfbef1; 
+  }
+
+  .boxOptions {
+    width: 100%;
+    height: auto;
+    min-height: 350px; 
+    padding: 0 50px;      
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #006a72; */
+  }
+
+  .options {
+      width: 30%;
+      min-width: 380px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; 
+      position: relative;  
+      flex-wrap: wrap; 
+      /* background-color: #4b9fff; */
+  }
+
+  .boxTitleImg {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+ 
+  .titleOptions {
+    width: 100%;
+    height:auto;
+    color: #f0f8ff;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .boxImg {
+    width: 396px;
+    height: 248px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#8385be, #006a72); 
+    position: relative;
+  }
+
+  .imgOptions {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px  #000000;
+    transition: all ease-in-out 1s; 
+    cursor: pointer; 
+  }
+
+  .imgOptions:hover {
+    position: relative;
+    bottom: 8px; 
+    left: 8px;
+  }
+
+  
+
+@media only screen and (max-width: 1450px) {
+
+  .title{
+      font-size: 2em;
+  }  
+  
+  .subTitle {
+    font-size: 1em;
+  }
+
+  .titleOptions {
+    font-size: 1.2em;
+  }
+
+  .boxImg {
+    width: 348px;
+    height: 248px;
+  }
+
+  .imgOptions {
+    width: 350px;
+    height: 250px;  
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+
+  .title{
+      font-size: 1.8em;
+  }  
+  
+  .subTitle {
+    font-size: .9em;
+  }
+
+    .boxOptions {
+    margin-bottom: 30px;
+  }
+
+  .options {
+    margin-right: 50px;
+    margin-bottom: 15px;
+  }
+
+  .titleOptions {
+    font-size: 1.0em;
+  }
+}
+
+@media only screen and (max-width: 976px) {
+
+  .title{
+      font-size: 1.5em;
+  }
+
+  .options {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .title{
+      font-size: 1.3em;
+  }
+
+  .subTitle {
+    font-size: .8em;
+  }
+
+  .options {
+    margin-right: 20px;
+  }
+
+  .boxImg {
+    width: 298px;
+    height: 198px;
+  }
+
+  .imgOptions {
+    width: 300px;
+    height: 200px;  
+  }
+}
+
+@media only screen and (max-width: 370px) {
+
+  .title{
+      font-size: 1.1em;
+  }
+
+  .options {
+    margin-right: 0px;
+  }
+
+  .boxImg {
+    width: 248px;
+    height: 148px;
+  }
+
+  .imgOptions {
+    width: 250px;
+    height: 150px;  
+  }
+}
+
+@media only screen and (max-width: 330px) {
+
+  .title{
+      font-size: 1.0em;
+  }
+
+  .titleOptions {
+    font-size: .9em;
+    }
+
+
+  .boxImg {
+    width: 248px;
+    height: 148px;
+  }
+
+  .imgOptions {
+    width: 250px;
+    height: 150px;  
+  }
+}

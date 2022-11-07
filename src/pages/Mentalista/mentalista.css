@@ -1,0 +1,145 @@
+.containerMentalista {
+  width: 100%; 
+  height: 100vh;
+  padding: 80px 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-image: url("https://res.cloudinary.com/jerrick/image/upload/f_jpg,fl_progressive,q_auto,w_1024/bddg9wckiogjrwtetu1k.jpg");
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.titleMentalista {
+  color: #ffffff;
+  margin: 0 0 5px;
+  font-size: 4.5em;
+  -webkit-linear-gradient: bottom, #ffb9ce, #ff6492, #9e002a, #520016, #9e002a, #ff6492, #ffb9ce;
+  background: linear-gradient(to bottom, #ffb9ce, #ff6492, #9e002a, #520016, #9e002a, #ff6492, #ffb9ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  font-family: sans-serif;
+  text-align: center;    
+}
+
+.subtitleMentalista {
+  color: #ffb9ce;
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+.inputMentalista {
+  width: 150px;
+  height: 90px;
+  font: 3.5em sans-serif;
+  text-align: center;
+  margin: 4px;
+  padding: 6px;
+  border-radius: 8px;
+  background-color: #ffdce7;
+}
+
+.boxButtonMentalista {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnChutar{
+  width: 130px;
+  height: auto;
+  font-size:  1em;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #f396b0;
+  color: #520016;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+.btnChutar:hover {
+  background-color: #ff4f81;
+  transform: scale(1.05);
+}
+
+.btnChutar:active {
+   transform: scale(0.95);
+}
+
+.btnZerar {
+  width: 130px;
+  height: auto;
+  font-size:  1em;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  background: #800000;
+  color: #ddd;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+.btnZerar:hover {
+  background-color: #b60000;
+  transform: scale(1.05);
+  border: none;
+}
+
+.btnZerar:active {
+   transform: scale(0.95);
+}
+
+.boxResults {
+  width: 90%;
+  height: 130px;
+  border-radius: 10px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.resultado {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #520016; 
+  background-color: #ffb9ce;
+}  
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .titleMentalista {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .titleMentalista {
+    font-size: 2.5em;
+  }
+
+  .subtitleMentalista {
+    font-size: 1.5em;
+  }
+}
+
+

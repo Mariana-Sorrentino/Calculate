@@ -1,0 +1,404 @@
+
+.containerMoedas {
+  width: 100%;
+  height: auto;    
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p1/4523061-notas-de-dolar-com-taxas-de-cambio-no-fundo-gr%C3%A1tis-foto.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pageTitle {
+  color: #ddd;
+  margin-top: 30px;
+  font-size: 6em;
+  margin-bottom: 10px;
+  -webkit-linear-gradient: bottom, #ffffff, #0c7511, #014404, #0c7511,  #ffffff, #0c7511, #014404, #0c7511,;
+  background: linear-gradient(to bottom, #ffffff, #0c7511, #014404, #0c7511, #ffffff, #0c7511, #014404, #0c7511);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  font-family: sans-serif;
+  text-align: center;  
+}
+
+.pageSubtitleMoedas {
+  color: #8ad18d;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size:3em;
+} 
+
+.MoedasInput {
+  width: 50%;
+  min-height: 40px;
+  padding: 0 25px;
+  border-radius: 10px;
+  margin-top: 5px;
+  border: solid 2px #111;
+  background-color: #ddd;
+  color: #111;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.labelMoedas {
+  color: #8ad18d;
+}
+
+.boxConversorMoedas {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  color: #8ad18d;
+  background-color: #d9fcdb1e;   
+  box-shadow: 0px 2px 50px #474747;    
+  border: solid 2px #ddd;
+  border-radius: 15px;    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.conversorMoedas{
+  width: 50%;
+  height: auto;
+  background-color: transparent;
+  color: #8ad18d;
+  font-size: 35px;
+  border-right: solid 2px #ddd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #4972af; */
+}
+
+.conversorMoedasTwo{
+  width: 50%;
+  height: auto;
+  background-color: transparent;
+  color: #8ad18d;
+  font-size: 35px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #a36d97; */
+}
+
+.boxSectionTop {
+  width: 100%;
+  height: auto;
+  min-height: 55px;
+  margin: 20px 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  /* background-color: #8ac1d1; */
+}
+
+.boxSection {
+  width: 100%;
+  height: auto;
+  min-height: 55px;
+  margin: 20px 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* background-color: #8ad18d; */
+}
+
+.valorMoeda {
+  width: 100%;
+  height: auto;
+  padding: 5px 20px;
+}
+
+.MoedaHoje {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.buttonMoeda {
+  width: 180px;
+  height: 40px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #0c7511;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.buttonMoeda:hover {
+  background-color:  #002502;
+  transform: scale(1.05);
+}
+
+.buttonMoeda:active {
+  transform: scale(0.95);
+}
+
+.buttonConvert{
+  width: 135px;
+  height: 40px;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #0549af;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.buttonConvert:hover {
+  background-color:  #0461ec;
+  transform: scale(1.05);
+}
+
+.buttonConvert:active {
+  transform: scale(0.95);
+}
+
+
+.btnZerarMoeda {
+  width: 135px;
+  height: 40px;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-left: 50px;
+  background-color: #921b1b;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.btnZerarMoeda:hover {
+  background-color: #6e0202;
+  transform: scale(1.05);
+}
+.btnZerarMoeda:active {
+   transform: scale(0.95);
+}
+
+.results{
+  width: 340px;
+  height: auto;
+  background-color: transparent;
+  color: #8ad18d;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.valorConvertidoMoeda{
+  width: 300px;
+  height: 50px;
+  background-color: transparent;
+  color: #ddd;
+  font-size: 25px; 
+  border: solid 2px #ddd;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+} 
+
+
+@media only screen and (max-width: 1190px) {
+
+  .buttonMoeda {
+    width: 150px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .pageTitle {
+    margin-top: 20px;
+    font-size: 3em; 
+  }
+  
+  .pageSubtitleMoedas {
+    font-size: 2em;
+  } 
+  
+  .boxSectionTop {
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    flex-direction: column-reverse;
+  }
+  
+  .MoedasInput {
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .buttonMoeda {
+    margin-bottom: 10px;
+  }
+
+  .MoedaHoje {
+    font-size: 20px;
+  }
+
+  .results{
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .boxConversorMoedas {
+    width: 95%; 
+  }
+
+  .valorConvertidoMoeda{
+    width: 270px;
+    height: 40px;
+    font-size: 20px; 
+  } 
+}
+
+@media only screen and (max-width: 680px) {
+
+  .boxConversorMoedas {
+    width: 98%;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;  
+  } 
+
+  .conversorMoedas{
+    width: 90%;
+    font-size: 35px;
+    border-right: none;
+    border-bottom: solid 2px #ddd;
+    padding: 30px 5px;
+  }
+  
+  .conversorMoedasTwo{
+    width: 90%;
+    height: auto;
+    font-size: 35px;
+    padding: 30px 5px;
+  }
+  
+  .boxSection {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  .pageTitle {
+    margin-top: 10px;
+    font-size: 2.5em; 
+  }
+  
+  .pageSubtitleMoedas {
+    font-size: 1.5em;
+  } 
+
+  .MoedaHoje {
+    width: 100%;
+  }
+
+  .MoedasInput {
+    width: 90%;
+  }
+
+  .valorConvertidoMoeda{
+    width: 90%; 
+  } 
+}
+
+@media only screen and (max-width: 350px) {
+
+  .pageTitle {
+    margin-top: 10px;
+    font-size: 2.2em; 
+  }
+  
+  .pageSubtitleMoedas {
+    font-size: 1.2em;
+  } 
+
+  .MoedaHoje {
+    width: 100%;
+  }
+
+  .MoedasInput {
+    width: 90%;
+    min-height: 35px;
+    font-size: 20px;
+  }
+
+  .valorConvertidoMoeda{
+    width: 90%; 
+    font-size: 18px;
+  } 
+
+  .MoedaHoje {
+    font-size: 16px;
+  }
+
+  .buttonMoeda {
+    width: 100%;
+    height: 35px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  
+  .buttonConvert{
+    width: 50%;
+    height: 35px;
+    margin-left: 0px;
+    font-size: 12px;
+  }  
+  
+  .btnZerarMoeda {
+    width: 50%;
+    height: 35px;
+    margin-left: 15px;
+    font-size: 12px;
+  }
+
+  .results{
+    width: 90%;
+    font-size: 20px;
+  }
+}
