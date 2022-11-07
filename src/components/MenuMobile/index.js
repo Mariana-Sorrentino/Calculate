@@ -25,17 +25,17 @@ const openMenu = () => {
     cont = cont + 1;
     if(cont %2 !=0){
         document.getElementById('open').style.display = "none";
-        document.getElementById('btnMenu').innerHTML = "Menu";     
+        document.getElementById('btnMenu').innerHTML = "Abrir";     
     }else{
         document.getElementById('open').style.display = "flex";
-        document.getElementById('btnMenu').innerHTML = "Fechar Menu";         
+        document.getElementById('btnMenu').innerHTML = "Fechar";         
     }
 }
 
   return (
     <div className="menuNavbar">
 
-      <button class="btnMenu" id="btnMenu" type="button" onClick={openMenu}>Menu</button> 
+      <button class="btnMenu" id="btnMenu" type="button" onClick={openMenu}>Abrir</button> 
 
       <header class="groupMenu" id="open">                         
               

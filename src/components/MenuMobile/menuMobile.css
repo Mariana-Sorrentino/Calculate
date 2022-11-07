@@ -211,11 +211,11 @@ transform: scale(1.2);
 
   .groupMenu {
     width: 80%;
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 370px) {
 
   .btnMenu {
     width: 120px; 
@@ -229,6 +229,14 @@ transform: scale(1.2);
 
   .groupMenu {
     width: 85%;
-    max-width: 230px;
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .groupMenu {
+    width: 85%;
+    max-width: 60%;
   }
 }
