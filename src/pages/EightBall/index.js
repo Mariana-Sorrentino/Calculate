@@ -51,7 +51,7 @@ export default function EightBall() {
 
 function gerarQuestion(ask) {
   if (ask === '') {
-    return <div></div>    
+    return <div>{''}</div>    
 }else {
   return <div className="textAsk">
           <span>Sua pergunta é: </span>
@@ -72,6 +72,7 @@ const reset = () => {
 
   return (
     <div className="ContainerEightBall">
+      <div className="boxBaseBall">
       <h1 className="pageTitleEight">BOLA 8</h1> <br/>
       <h1 className="pageTitleEight">Qual é o seu dilema?</h1> <br/>
       <h3 className="textLight">Digite sua pergunta e aperte o botão para saber a resposta!</h3> <br/>
@@ -111,6 +112,7 @@ const reset = () => {
      <div className="boxAnswer"> 
         <h2 className="answer">A Bola 8 Mágica diz: </h2>
         <h2 className="answerTwo">{question}</h2>
+      </div>
       </div>
     </div>
   )

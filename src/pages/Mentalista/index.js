@@ -93,34 +93,36 @@ export default function Mentalista() {
 
   return (
     <div className="containerMentalista">
-    <h1 className="titleMentalista">Mentalista - Adivinhe o Número Secreto</h1>
-    <p className="subtitleMentalista">Digite um número de 0 a 10</p>
-  
-    <input 
-      className="inputMentalista" 
-      type="number" 
-      value={palpite}
-      onChange = {(e) => setPalpite(e.target.value)}
-    />
+      <div className="boxBaseMentalista">
+        <h1 className="titleMentalista">Mentalista - Adivinhe o Número Secreto</h1>
+        <p className="subtitleMentalista">Digite um número de 0 a 10</p>
+      
+        <input 
+          className="inputMentalista" 
+          type="number" 
+          value={palpite}
+          onChange = {(e) => setPalpite(e.target.value)}
+        />
 
-    <div className="boxButtonMentalista">
-    <button 
-      className="btnChutar" 
-      type="submit" 
-      onClick={Chutar}>
-        Chutar
-    </button>
-    <button 
-      className="btnZerar" 
-      type="submit" 
-      onClick={reset}>
-        Zerar
-    </button>
-    </div>
-  
-    <div className="boxResults">
-      <div id="resultado">{result()}</div>
-      <div id="dica">{dicas()}</div>
+        <div className="boxButtonMentalista">
+        <button 
+          className="btnChutar" 
+          type="submit" 
+          onClick={Chutar}>
+            Chutar
+        </button>
+        <button 
+          className="btnZerar" 
+          type="submit" 
+          onClick={reset}>
+            Zerar
+        </button>
+        </div>
+      
+        <div className="boxResults">
+          <div id="resultado">{result()}</div>
+          <div id="dica">{dicas()}</div>
+        </div>
     </div>
   </div>
   )  

@@ -18,6 +18,18 @@
   background-blend-mode: darken;
 }
 
+.boxBaseIMC {
+  width: 100%;
+  max-width: 1950px;
+  height: auto;
+  min-height: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .pageTitleIMC {
   color: #ddd;
   margin: 0 0 10px;

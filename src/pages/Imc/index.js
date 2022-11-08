@@ -109,7 +109,8 @@ import './imc.css';
 
   return (
     <div className='app'> 
-      <div className="containerIMC">   
+      <div className="containerIMC">
+        <div className="boxBaseIMC">   
         <h1 className='pageTitleIMC'>Calcule seu IMC</h1>
 
         <div className="goupContainer">                
@@ -181,7 +182,7 @@ import './imc.css';
                 </div>          
               </div>
           </div>
-            
+          </div>
         </div>    
 
       </div>

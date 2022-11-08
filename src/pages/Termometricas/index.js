@@ -179,6 +179,7 @@ export default function Termometricas() {
 
   return (
     <div className="containerTermometricas">
+      <div className="boxBaseTermo">
        <div className="boxTitle">
         <h1 className="pageTitleTermo">
             Conversão de Escalas Termométricas
@@ -393,7 +394,7 @@ export default function Termometricas() {
           </div>
       
         </div>
-      
+        </div>
       </div>    
   )
 }

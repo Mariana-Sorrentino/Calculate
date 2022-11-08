@@ -17,6 +17,18 @@
   background-position: top;
 }
 
+.boxBaseBall {
+  width: 100%;
+  max-width: 1950px;
+  height: auto;
+  min-height: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .pageTitleEight {
   color: #ddd;
   margin: 0 0 10px;
@@ -192,6 +204,10 @@
 
   .textAsk span {
     font-size: 22px;
+  }
+
+  .boxBtnAsk {
+    min-height: 130px;
   }
 
   .answer {

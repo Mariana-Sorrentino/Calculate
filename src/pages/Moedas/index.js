@@ -74,6 +74,7 @@ export default function Moedas() {
   return (
     <div  className='app'>
       <div className="containerMoedas">
+        <div className="boxBaseMoeda">
             <h1 className="pageTitle">
               Conversor de moedas
             </h1>
@@ -197,7 +198,8 @@ export default function Moedas() {
                    <div className="valorConvertidoMoeda" >R$ {resultadoEuro}</div>
                  </div>             
              </div>
-          </div>  
+          </div>
+      </div>  
     </div>
   )
 } 

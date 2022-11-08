@@ -6,6 +6,8 @@ export default function Home() {
   return (
     <div className="containerHome">
     
+    <div className="boxBaseDog">
+      
       <div className="boxTitle">
           <div className="title">
               <h1>Vamos Calcular?</h1> 
@@ -116,6 +118,7 @@ export default function Home() {
           </div>
       </div> 
 
+      </div>
       </div>
     </div>
   );

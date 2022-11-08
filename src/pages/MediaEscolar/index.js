@@ -83,6 +83,8 @@ export default function MediaEscolar() {
 
   return (
     <div className="containerMedia">
+
+      <div className="boxBaseMedia">
     
       <h1 className="pageTitleMedia">
         Calculadora de Média Escolar
@@ -175,6 +177,7 @@ export default function MediaEscolar() {
         <h4>classificação:</h4>
       </div>
       <div className="aprovacaoMedia">{classification()}</div>      
+    </div>
     </div>
 </div>
 )

@@ -14,6 +14,18 @@
   background-repeat: no-repeat;
 }
 
+.boxBaseMentalista {
+  width: 100%;
+  max-width: 1950px;
+  height: auto;
+  min-height: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .titleMentalista {
   color: #ffffff;
   margin: 0 0 5px;
